@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 {
     public float positionSpeed = 10f;
     public float rotationSpeed = 60f;
+    public float firstGame = 1f;
     NavMeshAgent agent;
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,7 @@ public class Player : MonoBehaviour
     {
         //transform.Translate(Vector3.forward * Input.GetAxis("Vertical") * positionSpeed * Time.fixedDeltaTime);
         //transform.Translate(Vector3.right * Input.GetAxis("Horizontal") * positionSpeed * Time.fixedDeltaTime);
-        //Translate方法
+        //Translate锟斤拷锟斤拷
         /*
         if (Input.GetKey(KeyCode.E))
         {
@@ -35,7 +36,7 @@ public class Player : MonoBehaviour
         //transform.Rotate(Vector3.up * Input.GetAxis("Mouse X")*10);
         //transform.Rotate(Vector3.left * Input.GetAxis("Mouse Y") * 10); ;
         //transform.GetChild(0).localEulerAngles = new Vector3(Input.GetAxis("Vertical") * 10, 0, Input.GetAxis("Horizontal") * -10);
-        //直接使用向量赋值，没使用Translate
+        //直锟斤拷使锟斤拷锟斤拷锟斤拷锟斤拷值锟斤拷没使锟斤拷Translate
     }
     RaycastHit hitInfo;
     private void Update()
